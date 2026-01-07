@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HereYouGo</title>
+    <link href="contact.css" rel="stylesheet" />
+    <link href="navfooter.css" rel="stylesheet"/>
+     <link rel="icon" type="icon" href="../Icon.JPG"/>
+  </head>
+  <body>
+     <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo-group">
+      <div class="logo-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+      </div>
+      <span class="logo-text">Here<span class="logo-highlight">YouGo</span></span>
+    </div>
+
+    <input type="checkbox" id="check" hidden>
+    
+    <label for="check" class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="mobile-only"><button class="btn-order"><a href="services.html">Order Now</a></button></li>
+    </ul>
+
+    <div class="nav-action">
+      <button class="btn-order"><a href="services.html">Order Now</a></button>
+    </div>
+  </div>
+</nav>
+
+    <section class="main">
+
+       <!-- Contact Form  -->
+
+      <section class="text">
+        <div class="txt1">
+          <h1>Send us a Message</h1>
+        </div>
+        <form>
+
+          <div class="txt2">
+            <div>
+              <label for="fullname">Your Name</label><br />
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter Your Name"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="email">Email Address</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="txt3">
+            <label for="sub">Subject</label><br/>
+            <input type="text" name="sub" id="sub" placeholder="How can we help?" required/>
+          </div>
+
+          <div class="txt4">
+            <label>Message</label><br/>
+            <!-- <input type="text" name="message" id="message" placeholder="Tell us more about your inquiry..."> -->
+             <textarea placeholder="Tell us more about your inquiry..." required></textarea>
+          </div>
+
+          <div class="txt5">
+            <input type="submit" value="Send Message"/>
+          </div>
+        </form>
+      </section>
+
+      <!-- Contact Information  -->
+
+      <section class="info">
+        <div class="infobox">
+          <h1>Contact Information</h1>
+          <br />
+          <p>
+            Reach out through any of the channels below. Our team typically
+            responds within a few hours.
+          </p>
+        </div>
+
+        <div class="box1">
+          <div class="bx1">
+            <div><i class="fa-solid fa-location-dot"></i></div>
+            <h2>Address</h2>
+            <p>
+              
+                123 Delivery Street<br />
+                Downtown District, City 10001
+              
+            </p>
+          </div>
+          <div class="bx2">
+            <div><i class="fa-solid fa-phone"></i></div>
+            <h2>Phone</h2>
+            <p>
+              <u
+                >+1 (555) 123-4567<br />
+                +1 (555) 987-6543</u
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="box2">
+          <div class="bx3">
+            <div><i class="fa-regular fa-envelope"></i></div>
+            <h2>Email</h2>
+            <p>
+              <u
+                >hello@swiftride.com<br />
+                support@swiftride.com</u
+              >
+            </p>
+          </div>
+          <div class="bx4">
+            <div><i class="fa-regular fa-clock"></i></div>
+            <h2>Hours</h2>
+            <p>
+              <u
+                >Mon-Fri: 8AM - 10PM<br />
+                Sat-Sun: 9AM - 11PM</u
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="mapbox">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15277.507476593084!2d96.18452180000001!3d16.807649799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1767799601425!5m2!1sen!2smm" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- Footer  -->
+
+    <section class="container5">
+      <section>
+        <div class="boxfoot">
+          <div class="boxfoot1">
+            <div id="bft1"><i class="fa-solid fa-person-biking"></i></div>
+            <div id="bft2"><span>Here</span><span>YouGo</span></div>
+          </div>
+
+          <div class="boxfoot2">
+            <p>
+              Lightning-fast delivery service bringing your cravings to life.<br />Fresh,fast,
+              and reliable.
+            </p>
+          </div>
+        </div>
+
+        <div class="boxfoot">
+          <div class="boxfoot3">Our Services</div>
+          <div class="boxfoot4">
+            <p>
+              Food Delivery<br />Grocery Delivery<br />Package Delivery<br />Express
+              Delivery
+            </p>
+          </div>
+        </div>
+
+        <div class="boxfoot">
+          <div class="boxfoot5">Discover</div>
+          <div class="boxfoot6">
+            <p><a href="Home.html">Home</a><br />
+              <a href="services.html">Our Services</a><br />
+              <a href="aboutus.html">About Us</a><br />
+              <a href="contact.html">Contact</a></p>
+          </div>
+        </div>
+
+        <div class="boxfoot">
+          <div class="boxfoot7">Contact</div>
+          <div class="boxfoot8">
+               <div class="bxt1">
+              <div><i class="fa-solid fa-location-dot"></i></div>
+              <div> <u>123 Delivery Street,Downtown District, City 10001</u></div>
+            </div>
+            <div class="bxt2">
+              <div><i class="fa-solid fa-phone"></i></div>
+              <div> <u>+1 (555) 123-4567</u></div>
+            </div> 
+            <div class="bxt3">
+              <div><i class="fa-regular fa-envelope"></i></div>
+              <div> <u>hello@swiftride.com</u></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <footer>&copy; 2025 All Rights Reserved. SwiftRide Delivery Co.</footer>
+      </footer>
+    </section>
+  </body>
+</html>

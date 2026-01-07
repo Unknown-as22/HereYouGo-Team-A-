@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HereYouGo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="navfooter.css"/>
+     <link rel="icon" type="icon" href="../Icon.JPG"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-group">
+          <div class="logo-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="18.5" cy="17.5" r="3.5" />
+              <circle cx="5.5" cy="17.5" r="3.5" />
+              <circle cx="15" cy="5" r="1" />
+              <path d="M12 17.5V14l-3-3 4-3 2 3h2" />
+            </svg>
+          </div>
+          <span class="logo-text"
+            >Here<span class="logo-highlight">YouGo</span></span
+          >
+        </div>
+
+        <input type="checkbox" id="check" hidden />
+
+        <label for="check" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="mobile-only">
+            <button class="btn-order"><a href="services.html">Order Now</a></button>
+          </li>
+        </ul>
+
+        <div class="nav-action">
+          <button class="btn-order"><a href="services.html">Order Now</a></button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="services-header">
+      <div class="container">
+        <h2 class="services-title">
+          Our <span class="highlight">Services</span>
+        </h2>
+        <p class="services-subtitle">
+          Transparent pricing, lightning-fast delivery. Choose the service that
+          fits your needs.
+        </p>
+      </div>
+    </section>
+
+    <section class="fd-pricing-section">
+      <div class="fd-container">
+        <div class="fd-info-card">
+          <div class="fd-logo-wrapper">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h2 class="fd-main-title">Food Delivery</h2>
+          <p class="fd-description">
+            Fresh meals from local restaurants delivered hot to your door.
+          </p>
+          <ul class="fd-features-list">
+            <li><i class="fa-solid fa-check"></i> Real-time tracking</li>
+            <li>
+              <i class="fa-solid fa-check"></i> Temperature-controlled bags
+            </li>
+            <li><i class="fa-solid fa-check"></i> Contactless option</li>
+          </ul>
+        </div>
+
+        <div class="fd-selection-card">
+          <h3 class="fd-pricing-header">Pricing Options</h3>
+
+          <div class="fd-option-group">
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" checked />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Standard Delivery</span>
+                <span class="fd-option-time">30-45 min</span>
+              </div>
+              <span class="fd-price">$2.99</span>
+            </label>
+
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Express Delivery</span>
+                <span class="fd-option-time">15-20 min</span>
+              </div>
+              <span class="fd-price">$5.99</span>
+            </label>
+
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Scheduled Delivery</span>
+                <span class="fd-option-time">Your choice</span>
+              </div>
+              <span class="fd-price">$1.99</span>
+            </label>
+          </div>
+
+          <button class="fd-order-btn">Order Food Delivery</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="fd-pricing-section">
+      <div class="fd-container">
+        <div class="fd-info-card">
+          <div class="fd-logo-wrapper">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <h2 class="fd-main-title">Grocery Delivery</h2>
+          <p class="fd-description">
+            Your weekly essentials picked fresh and delivered with care.
+          </p>
+          <ul class="fd-features-list">
+            <li><i class="fa-solid fa-check"></i> Careful handling</li>
+            <li><i class="fa-solid fa-check"></i> Fresh produce guarantee</li>
+            <li><i class="fa-solid fa-check"></i> Substitution alerts</li>
+          </ul>
+        </div>
+
+        <div class="fd-selection-card">
+          <h3 class="fd-pricing-header">Pricing Options</h3>
+
+          <div class="fd-option-group">
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" checked />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Standard (under $50)</span>
+                <span class="fd-option-time">1-2 hours</span>
+              </div>
+              <span class="fd-price">$4.99</span>
+            </label>
+
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Standard (over $50)</span>
+                <span class="fd-option-time">1-2 hours</span>
+              </div>
+              <span class="fd-price">$2.99</span>
+            </label>
+
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Express Grocery</span>
+                <span class="fd-option-time">30 min</span>
+              </div>
+              <span class="fd-price">$9.99</span>
+            </label>
+          </div>
+
+          <button class="fd-order-btn">Order Grocery Delivery</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="fd-pricing-section">
+      <div class="fd-container">
+        <div class="fd-info-card">
+          <div class="fd-logo-wrapper">
+            <i class="fa-solid fa-bus"></i>
+          </div>
+          <h2 class="fd-main-title">Express Services</h2>
+          <p class="fd-description">
+            When time is of the essence, we've got you covered.
+          </p>
+          <ul class="fd-features-list">
+            <li><i class="fa-solid fa-check"></i> Priority routing</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated rider</li>
+            <li><i class="fa-solid fa-check"></i> Live updates</li>
+          </ul>
+        </div>
+
+        <div class="fd-selection-card">
+          <h3 class="fd-pricing-header">Pricing Options</h3>
+
+          <div class="fd-option-group">
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" checked />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Document Rush</span>
+                <span class="fd-option-time">Under 30 min</span>
+              </div>
+              <span class="fd-price">$8.99</span>
+            </label>
+
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Gift Delivery</span>
+                <span class="fd-option-time">1 hour</span>
+              </div>
+              <span class="fd-price">$10.99</span>
+            </label>
+
+            <label class="fd-option-item">
+              <input type="radio" name="delivery-type" />
+              <div class="fd-option-details">
+                <span class="fd-option-name">Priority Any Package</span>
+                <span class="fd-option-time">50% faster</span>
+              </div>
+              <span class="fd-price">+$5.00</span>
+            </label>
+          </div>
+
+          <button class="fd-order-btn">Order Express Services</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="fees-notes-section">
+      <div class="fees-container">
+        <h2 class="fees-title">Additional Fees & Notes</h2>
+
+        <div class="fees-grid">
+          <div class="fee-item">
+            <h3 class="fee-name">Peak Hours</h3>
+            <p class="fee-details">+$1.50 during 12-2pm and 6-9pm weekdays</p>
+          </div>
+
+          <div class="fee-item">
+            <h3 class="fee-name">Distance Fee</h3>
+            <p class="fee-details">+$0.50 per km after first 5km</p>
+          </div>
+
+          <div class="fee-item">
+            <h3 class="fee-name">Free Delivery</h3>
+            <p class="fee-details">
+              Orders over $75 qualify for free standard delivery
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container5">
+      <section>
+        <div class="boxfoot">
+          <div class="boxfoot1">
+            <div id="bft1"><i class="fa-solid fa-person-biking"></i></div>
+            <div id="bft2"><span>Here</span><span>YouGo</span></div>
+          </div>
+
+          <div class="boxfoot2">
+            <p>
+              Lightning-fast delivery service bringing your cravings to life.<br />Fresh,fast,
+              and reliable.
+            </p>
+          </div>
+        </div>
+
+        <div class="boxfoot">
+          <div class="boxfoot3">Our Services</div>
+          <div class="boxfoot4">
+            <p>
+              Food Delivery<br />Grocery Delivery<br />Package Delivery<br />Express
+              Delivery
+            </p>
+          </div>
+        </div>
+
+        <div class="boxfoot">
+          <div class="boxfoot5">Discover</div>
+          <div class="boxfoot6">
+            <p>
+              <a href="Home.html">Home</a><br />
+              <a href="services.html">Our Services</a><br />
+              <a href="aboutus.html">About Us</a><br />
+              <a href="contact.html">Contact</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="boxfoot">
+          <div class="boxfoot7">Contact</div>
+          <div class="boxfoot8">
+            <div class="bxt1">
+              <div><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <u>123 Delivery Street,Downtown District, City 10001</u>
+              </div>
+            </div>
+            <div class="bxt2">
+              <div><i class="fa-solid fa-phone"></i></div>
+              <div><u>+1 (555) 123-4567</u></div>
+            </div>
+            <div class="bxt3">
+              <div><i class="fa-regular fa-envelope"></i></div>
+              <div><u>hello@swiftride.com</u></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <footer>&copy; 2025 All Rights Reserved. SwiftRide Delivery Co.</footer>
+      </footer>
+    </section>
+  </body>
+</html>
