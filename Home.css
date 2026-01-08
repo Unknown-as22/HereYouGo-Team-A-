@@ -389,11 +389,11 @@ a {
   }
 
   .forimg {
-    width: 100%;
+    width: 380px;
     margin: 5px;
   }
 
-  .forimg img {
+  img {
     width: 100%;
   }
 
